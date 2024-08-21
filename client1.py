@@ -27,9 +27,9 @@ for gpu in gpus:
   tf.config.experimental.set_memory_growth(gpu, True)
 
 BATCH_SIZE = 8
-train_data_dir = 'D:/TQ/Federated/1/train/'
+train_data_dir = 'D:/TQ/Balanced_Another/Client1/train/'
 
-test_data_dir = 'D:/TQ/Federated/1/val/'
+test_data_dir = 'D:/TQ/Balanced_Another/Client1/val/'
 
 print("Loading Images..")
 
@@ -210,4 +210,4 @@ fl.client.start_numpy_client(
     server_address="localhost:8080",
     client=client
 )
-model.save("client1_50_fedavg.h5")
+model.save("Client1_50.h5")

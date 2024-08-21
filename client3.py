@@ -28,9 +28,9 @@ for gpu in gpus:
 
   
 BATCH_SIZE = 8
-train_data_dir = 'D:/TQ/Federated/3/train/'
+train_data_dir = 'D:/TQ/Balanced_Another/Client3/train/'
 
-test_data_dir = 'D:/TQ/Federated/3/val/'
+test_data_dir = 'D:/TQ/Balanced_Another/Client3/val/'
 
 print("Loading Images..")
 
@@ -208,4 +208,4 @@ fl.client.start_numpy_client(
     server_address="localhost:8080",
     client=client
 )
-model.save("client3_50_fedavg.h5")
+model.save("Client3_50.h5")
